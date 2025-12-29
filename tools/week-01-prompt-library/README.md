@@ -20,6 +20,13 @@ Instead of crafting prompts from scratch every time, use these battle-tested pro
 
 ## 🚀 Quick Start
 
+### Option 1: Use the Web Browser (Recommended)
+1. Open `index.html` in your browser
+2. Browse prompts by category or search
+3. Click "Copy Prompt" to copy to clipboard
+4. Paste into your AI tool and customize
+
+### Option 2: Browse Manually
 1. **Browse by category** below
 2. **Copy the prompt** that fits your need
 3. **Customize** with your specific context

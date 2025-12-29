@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prompt Library Browser - Next 100 Days</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Prompt Library Browser</h1>
+            <p class="subtitle">Week 1 Tool | The Next 100 Days Project</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input 
+                    type="text" 
+                    id="searchInput" 
+                    placeholder="Search prompts by title, tags, or content..."
+                    autocomplete="off"
+                >
+                <span class="search-icon">🔍</span>
+            </div>
+            
+            <div class="category-filter">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="code-generation">Code Generation</button>
+                <button class="filter-btn" data-category="code-review">Code Review</button>
+                <button class="filter-btn" data-category="refactoring">Refactoring</button>
+                <button class="filter-btn" data-category="documentation">Documentation</button>
+                <button class="filter-btn" data-category="testing">Testing</button>
+                <button class="filter-btn" data-category="debugging">Debugging</button>
+                <button class="filter-btn" data-category="architecture">Architecture</button>
+            </div>
+        </div>
+
+        <div class="stats">
+            <span id="promptCount">0</span> prompts found
+        </div>
+
+        <div id="promptsContainer" class="prompts-grid">
+            <!-- Prompts will be loaded here -->
+        </div>
+
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>No prompts found. Try a different search term or category.</p>
+        </div>
+    </div>
+
+    <div id="toast" class="toast"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
+
