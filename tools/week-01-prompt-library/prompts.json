@@ -1,0 +1,100 @@
+{
+  "version": "1.0.0",
+  "categories": {
+    "code-generation": {
+      "react-component": {
+        "title": "Create a React Component",
+        "prompt": "Create a React functional component called [ComponentName] that:\n- Accepts these props: [list props]\n- Implements [specific functionality]\n- Uses [specific hooks/libraries]\n- Has [specific styling requirements]\n- Includes error handling for [specific cases]\n- Is fully typed with TypeScript\n- Follows React best practices\n\nInclude:\n- Component code\n- TypeScript interfaces\n- Usage example\n- Brief explanation of key decisions",
+        "tags": ["react", "typescript", "component"]
+      },
+      "api-endpoint": {
+        "title": "Generate API Endpoint",
+        "prompt": "Create a REST API endpoint for [resource] that:\n- Handles [HTTP methods: GET, POST, etc.]\n- Validates input using [validation library]\n- Uses [database/ORM] for data access\n- Implements proper error handling\n- Returns appropriate HTTP status codes\n- Includes request/response examples\n- Follows [framework] best practices",
+        "tags": ["api", "backend", "rest"]
+      },
+      "cli-tool": {
+        "title": "Build CLI Tool",
+        "prompt": "Create a command-line tool that:\n- Accepts arguments: [list arguments]\n- Performs [specific task]\n- Shows progress/output in [format]\n- Handles errors gracefully\n- Includes help text\n- Can be installed via npm/pip/etc.\n\nUse [language/framework] and follow CLI best practices.",
+        "tags": ["cli", "command-line", "tool"]
+      }
+    },
+    "code-review": {
+      "general": {
+        "title": "General Code Review",
+        "prompt": "Review this code for:\n- Correctness and logic errors\n- Performance issues\n- Security vulnerabilities\n- Code quality and maintainability\n- Best practices adherence\n- Potential bugs\n- Edge cases not handled\n\nProvide:\n- Critical issues (must fix)\n- Suggestions (should fix)\n- Nice-to-haves (consider)\n- Specific code improvements",
+        "tags": ["review", "quality", "best-practices"]
+      },
+      "security": {
+        "title": "Security Review",
+        "prompt": "Perform a security audit of this code:\n- Input validation issues\n- Authentication/authorization flaws\n- SQL injection risks\n- XSS vulnerabilities\n- Sensitive data exposure\n- Insecure dependencies\n- Missing security headers\n\nRate severity (Critical/High/Medium/Low) and provide fixes.",
+        "tags": ["security", "audit", "vulnerabilities"]
+      },
+      "performance": {
+        "title": "Performance Review",
+        "prompt": "Analyze this code for performance:\n- Time complexity issues\n- Memory leaks\n- Unnecessary re-renders/recomputations\n- Database query optimization\n- Network request efficiency\n- Caching opportunities\n- Bottlenecks\n\nProvide specific optimizations with before/after examples.",
+        "tags": ["performance", "optimization", "bottlenecks"]
+      }
+    },
+    "refactoring": {
+      "modernize": {
+        "title": "Modernize Legacy Code",
+        "prompt": "Refactor this legacy code to:\n- Use modern [language] features (ES6+, Python 3.9+, etc.)\n- Follow current best practices\n- Improve readability\n- Maintain backward compatibility [if needed]\n- Add type hints/TypeScript\n- Improve error handling\n- Add documentation\n\nShow before/after with explanations.",
+        "tags": ["refactoring", "modernization", "legacy"]
+      },
+      "extract": {
+        "title": "Extract and Organize",
+        "prompt": "Refactor this code by:\n- Extracting reusable functions/components\n- Organizing into logical modules/files\n- Removing duplication (DRY principle)\n- Improving naming conventions\n- Adding proper abstractions\n- Maintaining existing functionality\n\nProvide the refactored structure and key changes.",
+        "tags": ["refactoring", "organization", "dry"]
+      }
+    },
+    "documentation": {
+      "readme": {
+        "title": "Generate README",
+        "prompt": "Create a comprehensive README for this project:\n- Clear project description\n- Installation instructions\n- Usage examples\n- API documentation (if applicable)\n- Configuration options\n- Contributing guidelines\n- License information\n\nMake it beginner-friendly and include code examples.",
+        "tags": ["documentation", "readme", "markdown"]
+      },
+      "function-doc": {
+        "title": "Document Function/Class",
+        "prompt": "Generate documentation for this [function/class]:\n- Purpose and overview\n- Parameters/arguments (types, descriptions, defaults)\n- Return value (type and description)\n- Usage examples\n- Edge cases and error conditions\n- Related functions/classes\n- Performance notes (if relevant)\n\nUse [JSDoc/Python docstring/other] format.",
+        "tags": ["documentation", "api-docs", "comments"]
+      }
+    },
+    "testing": {
+      "unit-tests": {
+        "title": "Write Unit Tests",
+        "prompt": "Write comprehensive unit tests for this [function/component]:\n- Test happy path\n- Test edge cases\n- Test error conditions\n- Test boundary values\n- Achieve [X]% code coverage\n- Use [testing framework]\n- Follow AAA pattern (Arrange, Act, Assert)\n- Include test descriptions\n\nProvide the test file with setup/teardown if needed.",
+        "tags": ["testing", "unit-tests", "tdd"]
+      },
+      "test-cases": {
+        "title": "Generate Test Cases",
+        "prompt": "Generate test cases for this feature:\n- Normal operation scenarios\n- Edge cases\n- Error conditions\n- Boundary values\n- Integration points\n- Performance scenarios\n\nFormat as a test matrix with:\n- Test ID\n- Description\n- Input\n- Expected output\n- Priority",
+        "tags": ["testing", "test-cases", "qa"]
+      }
+    },
+    "debugging": {
+      "find-bug": {
+        "title": "Find the Bug",
+        "prompt": "Debug this code that's experiencing [specific issue]:\n- Error message: [paste error]\n- Expected behavior: [describe]\n- Actual behavior: [describe]\n- Steps to reproduce: [list steps]\n\nAnalyze and:\n- Identify the root cause\n- Explain why it's happening\n- Provide a fix\n- Suggest prevention strategies",
+        "tags": ["debugging", "bug-fixing", "troubleshooting"]
+      },
+      "performance": {
+        "title": "Performance Debugging",
+        "prompt": "This code is slow. Help me debug:\n- Current performance: [metrics/timing]\n- Expected performance: [target]\n- Code section: [highlight if known]\n- Environment: [details]\n\nIdentify bottlenecks and provide optimized solution.",
+        "tags": ["debugging", "performance", "optimization"]
+      }
+    },
+    "architecture": {
+      "system-design": {
+        "title": "Design System Architecture",
+        "prompt": "Design the architecture for a [type of system] that:\n- Handles [requirements]\n- Scales to [scale requirements]\n- Uses [technology stack]\n- Follows [architectural patterns]\n- Integrates with [external systems]\n\nProvide:\n- High-level diagram (text/ASCII)\n- Component breakdown\n- Data flow\n- Technology choices with rationale\n- Scalability considerations",
+        "tags": ["architecture", "system-design", "scalability"]
+      },
+      "tech-stack": {
+        "title": "Choose Technology Stack",
+        "prompt": "I need to build [project description]. Help me choose:\n- Frontend framework\n- Backend framework\n- Database\n- Hosting/deployment\n- Development tools\n\nConsider:\n- Team expertise\n- Project scale\n- Performance requirements\n- Budget constraints\n- Long-term maintainability\n\nProvide recommendations with pros/cons.",
+        "tags": ["architecture", "tech-stack", "decision-making"]
+      }
+    }
+  }
+}
+
