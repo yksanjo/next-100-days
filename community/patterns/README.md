@@ -26,3 +26,5 @@ _Coming soon! Share your first pattern._
 
 **Have a pattern that works?** Share it with the community!
 
+
+
